@@ -21,7 +21,7 @@ data = response.json()
 posts = data["content"]
 
 # Create app
-app = Flask(__name__)
+app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), "../templates"), static_folder=os.path.join(os.path.dirname(__file__), "../static"))
 
 # Routes
 @app.route("/")
