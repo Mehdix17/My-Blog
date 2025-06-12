@@ -20,8 +20,12 @@ response = requests.get(API_URL)
 data = response.json()
 posts = data["content"]
 
-# Create app
-app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), "../templates"), static_folder=os.path.join(os.path.dirname(__file__), "../static"))
+# Get absolute path to /templates and /static
+base_dir = os.path.dirname(os.path.abspath(__file__))
+template_dir = os.path.abspath(os.path.join(base_dir, '../templates'))
+static_dir = os.path.abspath(os.path.join(base_dir, '../static'))
+
+app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
 # Routes
 @app.route("/")
