@@ -1,0 +1,43 @@
+{% include 'header.html' %}
+
+<header class="masthead" style="background-image: url('{{ post.image_url }}')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading text-center">
+          <h1>AI in Healthcare: Revolutionizing Diagnosis and Treatment</h1>
+          <h2 class="subheading">
+            How Artificial Intelligence Is Saving Lives
+          </h2>
+          <span class="meta"
+            >Posted by <strong>Nadia Kimani</strong> on 10/12/2022</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>
+          Artificial Intelligence is transforming healthcare by enabling faster
+          diagnosis, personalized treatments, and predictive analytics.
+          AI-powered tools can analyze medical images, detect tumors, and
+          forecast patient deterioration, often with greater accuracy than
+          humans.
+        </p>
+        <p>
+          Startups and major tech companies are collaborating with hospitals to
+          integrate AI into radiology, pathology, and patient care. While
+          promising, challenges remain in terms of data privacy, algorithm bias,
+          and ensuring accountability in life-critical applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include 'footer.html' %}

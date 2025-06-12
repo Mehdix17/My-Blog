@@ -1,0 +1,44 @@
+{% include 'header.html' %}
+
+<header class="masthead" style="background-image: url('{{ post.image_url }}')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading text-center">
+          <h1>Machine Learning: Teaching Machines to Learn from Data</h1>
+          <h2 class="subheading">
+            Exploring the Algorithms Behind Intelligent Systems
+          </h2>
+          <span class="meta"
+            >Posted by <strong>Avery Noor</strong> on 2/03/2021</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>
+          Machine learning is a subfield of artificial intelligence that enables
+          machines to learn from data and improve over time without being
+          explicitly programmed. By analyzing patterns in large datasets, ML
+          algorithms can make predictions, detect anomalies, and even generate
+          content.
+        </p>
+        <p>
+          Common applications of machine learning include spam detection, fraud
+          prevention, facial recognition, and recommendation systems. Tools like
+          TensorFlow and scikit-learn make it easier than ever for developers to
+          build intelligent applications. However, the quality of data and the
+          interpretability of models remain ongoing challenges.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include 'footer.html' %}

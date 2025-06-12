@@ -1,0 +1,41 @@
+<!-- Header -->
+{% include 'header.html' %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/home-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>Welcome to my blog</h1>
+          <span class="subheading"
+            >Explore stories at the edge of design, code, and innovation.</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      {% for post in posts: %}
+      <!-- Divider-->
+      <hr class="my-4" />
+      <!-- Post preview-->
+      <div class="post-preview">
+        <a href="{{ url_for('post', id=post.id, year=year) }}">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        </a>
+        <p class="post-meta">Posted by {{ post.author }} on {{ post.date }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Footer-->
+    {% include 'footer.html' %}
+  </div>
+</div>

@@ -1,0 +1,42 @@
+{% include 'header.html' %}
+
+<header class="masthead" style="background-image: url('{{ post.image_url }}')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading text-center">
+          <h1>Cybersecurity and AI: A Double-Edged Sword</h1>
+          <h2 class="subheading">
+            How AI Helps — and Threatens — Digital Security
+          </h2>
+          <span class="meta"
+            >Posted by <strong>Leena Varsani</strong> on 17/09/2023</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>
+          AI plays a critical role in modern cybersecurity. Machine learning
+          models can detect suspicious network behavior, flag phishing emails,
+          and automate incident response. These tools help organizations stay
+          ahead of rapidly evolving cyber threats.
+        </p>
+        <p>
+          However, AI can also be used by malicious actors. Deepfakes, automated
+          hacking tools, and AI-powered social engineering are becoming new
+          fronts in the cybersecurity war. As defenses get smarter, so do the
+          attacks — making cybersecurity a race against time and technology.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include 'footer.html' %}
